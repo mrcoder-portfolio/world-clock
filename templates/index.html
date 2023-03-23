@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My World Clock</title>
+</head>
+
+<body>
+
+    <div class="isolate bg-white">
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+            <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+                viewBox="0 0 1155 678">
+                <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3"
+                    d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                <defs>
+                    <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177"
+                        y2="474.645" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#9089FC" />
+                        <stop offset="1" stop-color="#FF80B5" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="px-6 pt-6 lg:px-8">
+            <nav class="flex items-center justify-between" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
+
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
+                            aria-hidden="true">&rarr;</span></a>
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div role="dialog" aria-modal="true">
+                <div class="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                alt="">
+                        </a>
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Product</a>
+
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Features</a>
+
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Marketplace</a>
+
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Company</a>
+                            </div>
+                            <div class="py-6">
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">Log
+                                    in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="container mx-auto">
+            <div class="relative px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl py-4 sm:py-6 lg:py-8">
+                    <div class="text-center">
+                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Welcome to World Clock
+                        </h1>
+                        <p class="mt-6 text-lg leading-8 text-gray-600">This is an amazing brower based world clock with
+                            alraming feature.</p>
+
+                    </div>
+                </div>
+                <div
+                    class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+                    <svg class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+                        viewBox="0 0 1155 678">
+                        <path fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)" fill-opacity=".3"
+                            d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                        <defs>
+                            <linearGradient id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc" x1="1155.49" x2="-78.208"
+                                y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#9089FC" />
+                                <stop offset="1" stop-color="#FF80B5" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <section class="flex gap-4 justify-center">
+
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">United States</h5>
+                    <span id="usa" class="mb-2 font-bold text-gray-700 block">Noteworthy technology acquisitions
+                        2021</span>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                        Read more
+                        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">China</h5>
+                    <span id="china" class="mb-2 font-bold text-gray-700 block">Noteworthy technology acquisitions
+                        2021</span>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                        Read more
+                        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Pakistan</h5>
+                    <span id="pakistan" class="mb-2 font-bold text-gray-700 block">Noteworthy technology acquisitions
+                        2021
+                    </span>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                        Read more
+                        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <div class="my-8 flex justify-center space-x-2" data-te-timepicker-init data-te-input-wrapper-init>
+                <label>Select
+                    a time</label>
+                <input id="alarm" class="border border-gray-200" type="time" />
+            </div>
+        </main>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    const updateTime = () => {
+        let d = new Date()
+        usa.innerHTML = d.toLocaleString("en-US", { timeZone: "America/New_York" })
+        china.innerHTML = d.toLocaleString("en-US", { timeZone: "Asia/Shanghai" })
+        pakistan.innerHTML = d.toLocaleString("en-US", { timeZone: "Asia/Karachi" })
+        let alarmhour = alarm.value.split(":")[0]
+        let alarmminute = alarm.value.split(":")[1]
+        if (d.getHours() == alarmhour && d.getMinutes() == alarmminute) {
+                var audio = new Audio('https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3');
+                audio.play();
+        }
+    }
+    setInterval(updateTime, 1000)
+
+</script>
+
+</html>
